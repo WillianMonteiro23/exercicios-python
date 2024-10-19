@@ -92,7 +92,7 @@ O objetivo deste exercício é criar uma função que receba um CPF como entrada
 - Utilize listas para armazenar os dígitos do CPF e realizar as operações necessárias.
 - Teste sua função com diferentes entradas, incluindo CPFs válidos e inválidos, para garantir que a lógica está correta.
 
-## ➡️ [Solução]() ⬅️ 
+## ➡️ [Solução](https://github.com/WillianMonteiro23/exercicios-python/blob/main/algoritmo-validacao-cpf/validador_cpf.py) ⬅️ 
 
 
 
