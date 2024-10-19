@@ -179,5 +179,5 @@ Suponha que a palavra secreta seja "python":
 - Considere usar um loop para continuar solicitando entradas até que a palavra completa seja adivinhada.
 - Lembre-se de tratar entradas inválidas (como mais de uma letra ou caracteres especiais).
 
-### ➡️ [Solução](https://github.com/WillianMonteiro23/exercicios-python/blob/main/jogo_adivinhacao.py) ⬅️ 
+### ➡️ [Solução](https://github.com/WillianMonteiro23/exercicios-python/blob/main/jogo-adivinhacao/jogo_adivinhacao.py) ⬅️ 
 
