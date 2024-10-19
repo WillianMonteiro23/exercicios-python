@@ -19,6 +19,7 @@ Cada exercício será acompanhado de uma explicação sobre o problema e um esbo
 
 - [Algoritmo de Validação do CPF](#algoritmo-de-validação-do-cpf)
 - [Gerenciador de Tarefas](#gerenciador-de-tarefas)
+- [Jogo de Adivinhação da Palavra Secreta](#jogo-de-adivinhação-da-palavra-secreta)
 
 
 ### 🎯 Como isso pode auxiliar nos estudos?
@@ -97,7 +98,8 @@ A lógica do algoritmo é baseada em um método de verificação que utiliza os 
 - Utilize listas para armazenar os dígitos do CPF e realizar as operações necessárias.
 - Teste sua função com diferentes entradas, incluindo CPFs válidos e inválidos, para garantir que a lógica está correta.
 
-## ➡️ [Solução](https://github.com/WillianMonteiro23/exercicios-python/blob/main/algoritmo-validacao-cpf/validador_cpf.py) ⬅️ 
+### ➡️ [Solução](https://github.com/WillianMonteiro23/exercicios-python/blob/main/algoritmo-validacao-cpf/validador_cpf.py) ⬅️ 
+
 
 ## Gerenciador de Tarefas
 
@@ -140,8 +142,42 @@ A lógica do algoritmo é baseada em um método de verificação que utiliza os 
 - **Teste Suas Funcionalidades**: À medida que implementa cada função, teste-a individualmente para garantir que esteja funcionando conforme o esperado antes de integrá-la com o resto do programa.
 - **Exemplo de Execução**: Teste seu programa com diferentes cenários, como adicionar várias tarefas, desfazer e refazer tarefas, e garantir que a lista seja salva e recarregada corretamente.
 
-## ➡️ [Solução](https://github.com/WillianMonteiro23/exercicios-python/blob/main/gerenciador-de-tarefas) ⬅️ 
+### ➡️ [Solução](https://github.com/WillianMonteiro23/exercicios-python/blob/main/gerenciador-de-tarefas) ⬅️ 
 
 
+## Jogo de Adivinhação da Palavra Secreta
 
+### Descrição
+
+Neste exercício, você irá criar um jogo interativo onde o usuário tenta adivinhar uma palavra secreta. Siga as instruções abaixo para implementar o jogo:
+
+1. **Palavra Secreta**: Defina uma palavra secreta que será a meta do jogo.
+
+2. **Entrada do Usuário**: Permita que o usuário digite apenas uma letra por vez. Você deve armazenar as tentativas do usuário.
+
+3. **Conferência de Letras**:
+    - Quando o usuário digitar uma letra, você deverá verificar se a letra está presente na palavra secreta.
+        - Se a letra digitada estiver na palavra secreta, exiba a letra na sua posição correta.
+        - Se a letra não estiver presente, exiba um asterisco (`*`) em seu lugar.
+
+4. **Contagem de Tentativas**: Mantenha um registro do número total de tentativas feitas pelo usuário e exiba essa informação ao final do jogo.
+
+5. **Objetivo do Jogo**: O jogo deve continuar até que o usuário adivinhe todas as letras da palavra secreta ou até que ele decida parar.
+
+### Exemplo de Funcionamento
+
+Suponha que a palavra secreta seja "python":
+
+- O usuário digita `p` → A palavra exibida: `p****`
+- O usuário digita `a` → A palavra exibida: `p****` (nenhuma alteração, pois `a` não está na palavra)
+- O usuário digita `y` → A palavra exibida: `py***`
+- E assim por diante, até que a palavra completa seja adivinhada ou o usuário decida parar.
+
+### Dicas de Implementação
+
+- Use uma lista para armazenar as letras adivinhadas e compare com a palavra secreta.
+- Considere usar um loop para continuar solicitando entradas até que a palavra completa seja adivinhada.
+- Lembre-se de tratar entradas inválidas (como mais de uma letra ou caracteres especiais).
+
+### ➡️ [Solução](https://github.com/WillianMonteiro23/exercicios-python/blob/main/jogo_adivinhacao.py) ⬅️ 
 
