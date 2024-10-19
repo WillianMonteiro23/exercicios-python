@@ -11,7 +11,7 @@ option = ''
 commands = ["list", "undo", "redo", "clear", "save", "stop"]
 
 # Caminho do arquivo onde a lista de tarefas será salva
-FILE_PATH = 'task_list.json'
+FILE_PATH = 'tasklist.json'
 
 # Inicializa a variável task_list chamando a função read_function,
 # que lê as tarefas do arquivo FILE_PATH ou retorna uma lista vazia se o arquivo estiver vazio
