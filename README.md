@@ -18,6 +18,7 @@ Cada exercício será acompanhado de uma explicação sobre o problema e um esbo
 ### 📑 Índice
 
 - [Algoritmo de Validação do CPF](#algoritmo-de-validação-do-cpf)
+- [Gerenciador de Tarefas](#gerenciador-de-tarefas)
 
 
 ### 🎯 Como isso pode auxiliar nos estudos?
@@ -97,6 +98,50 @@ A lógica do algoritmo é baseada em um método de verificação que utiliza os 
 - Teste sua função com diferentes entradas, incluindo CPFs válidos e inválidos, para garantir que a lógica está correta.
 
 ## ➡️ [Solução](https://github.com/WillianMonteiro23/exercicios-python/blob/main/algoritmo-validacao-cpf/validador_cpf.py) ⬅️ 
+
+## Gerenciador de Tarefas
+
+### Descrição
+
+Neste exercício, você irá desenvolver um gerenciador de tarefas simples em Python. O programa deve permitir que o usuário crie uma lista de tarefas, além de oferecer funcionalidades para gerenciar essas tarefas de forma eficiente.
+
+### Objetivo
+
+O objetivo é implementar um programa que permita ao usuário adicionar tarefas à lista e gerenciá-las através de diversas operações.
+
+### Lógica do Algoritmo
+
+A lógica do algoritmo é baseada em um método de verificação que utiliza os 9 primeiros dígitos do CPF para calcular os dois dígitos verificadores. A ideia é que a sequência de operações matemáticas aplicadas aos dígitos de um CPF válido produza resultados que sempre respeitarão um padrão específico. Esses cálculos não são aleatórios, mas seguem uma regra lógica que permite validar o CPF.
+
+### Requisitos
+
+1. **Adicionar Tarefas**:
+   - O usuário pode digitar qualquer tarefa e essa tarefa deve ser adicionada a uma lista de tarefas.
+
+2. **Funcionalidades**:
+   - O programa deve oferecer as seguintes opções:
+     - **Listar as Tarefas**: Exibir todas as tarefas atualmente na lista.
+     - **Desfazer a Última Tarefa**: Remover a tarefa que foi adicionada mais recentemente e armazená-la em uma lista de tarefas desfeitas.
+     - **Refazer a Tarefa Desfeita**: Restaurar a última tarefa que foi desfeita.
+     - **Limpar a Tela**: Limpar a tela do console, mas manter a lista de tarefas inalterada.
+     - **Salvar a Lista**: Salvar o estado atual da lista de tarefas em um arquivo para que possa ser recarregada posteriormente.
+     - **Parar a Listagem de Tarefas**: Encerrar o programa e salvar o estado atual da lista de tarefas.
+
+3. **Persistência de Dados**:
+   - As tarefas devem ser salvas em um arquivo (por exemplo, em formato de texto) quando o usuário optar por salvar ou parar a listagem. Ao reiniciar o programa, as tarefas salvas devem ser carregadas automaticamente.
+
+### Dicas
+
+- **Estruture seu Código**: Considere dividir seu programa em funções distintas para cada funcionalidade. Isso tornará seu código mais organizado e fácil de entender.
+- **Use Estruturas de Dados Apropriadas**: Uma lista pode ser usada para armazenar as tarefas, enquanto uma pilha (ou lista) pode ser útil para gerenciar as tarefas desfeitas e refeitas.
+- **Tratamento de Erros**: Certifique-se de implementar tratamento de erros para entradas inválidas, como quando o usuário tenta desfazer uma tarefa quando não há nenhuma tarefa disponível.
+- **Persistência de Dados**: Utilize a biblioteca `json` para salvar suas tarefas em um arquivo, facilitando a leitura e a gravação das listas de tarefas.
+- **Limpeza da Tela**: Para limpar a tela do console, você pode usar comandos específicos do sistema operacional (`os.system('cls')` no Windows ou `os.system('clear')` no Linux/Mac).
+- **Teste Suas Funcionalidades**: À medida que implementa cada função, teste-a individualmente para garantir que esteja funcionando conforme o esperado antes de integrá-la com o resto do programa.
+- **Exemplo de Execução**: Teste seu programa com diferentes cenários, como adicionar várias tarefas, desfazer e refazer tarefas, e garantir que a lista seja salva e recarregada corretamente.
+
+## ➡️ [Solução](https://github.com/WillianMonteiro23/exercicios-python/blob/main/gerenciador-de-tarefas) ⬅️ 
+
 
 
 
