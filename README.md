@@ -17,7 +17,7 @@ Cada exercício será acompanhado de uma explicação sobre o problema e um esbo
 
 ### 📑 Índice
 
-- [Algoritmo de Validação do CPF](#algoritmo-de-Validação-do-CPF)
+- [Algoritmo de Validação do CPF](#algoritmo-de-validação-do-cpf)
 
 
 ### 🎯 Como isso pode auxiliar nos estudos?
@@ -55,7 +55,7 @@ Sinta-se à vontade para avançar no seu próprio ritmo. Cada exercício é proj
 - **Colabore com outros**: Se possível, compartilhe suas soluções com colegas ou participe de comunidades online. A troca de ideias pode fornecer novos insights.
 - **Revisite exercícios antigos**: À medida que avança, volte para os exercícios que você já fez e tente resolvê-los de formas diferentes, ou usando técnicas que aprendeu recentemente.
 
-## ✔️ Algoritmo de Validação do CPF
+## Algoritmo de Validação do CPF
 ### Exercício Proposto: Criar um Validador de CPF
 
 ### Descrição
