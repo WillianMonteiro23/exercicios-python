@@ -1,14 +1,14 @@
 import json
-import os
 
-# função que lista graficamente o nome da lista
 def list_name():
+    """Função que lista graficamente o nome da lista"""
     print()
     print('TASK LIST:')
     print()
 
-# função que lista item a item prensete dentro da lista de tarefas
+
 def list_function(task_list):
+    """Função que lista item a item prensete dentro da lista de tarefas"""
     list_name()
     if task_list:
         for item in task_list:
@@ -17,8 +17,9 @@ def list_function(task_list):
         print('THE LIST IS EMPTY') # caso a lista não contenha valores
     print()
 
-# lista para desfazer uma tarefa adicionada
+
 def undo_function(task_list):
+    """Funcao para desfazer uma tarefa adicionada"""
     list_name()
     try:
         pop_item = task_list.pop(-1) # remove a utlima tarefa adicionada na lista de tarefas
@@ -28,7 +29,9 @@ def undo_function(task_list):
         print('ERROR : pop from empty list')
     print()
 
+
 def redo_function(task_list, task_list_pop):
+    """Funcao para refazer acao desfeita"""
     list_name()
     if task_list_pop and task_list: # Verifica se task_list_pop é uma lista não vazia
         try:
@@ -42,8 +45,9 @@ def redo_function(task_list, task_list_pop):
         print('ERROR: task_list_pop is None or empty.') # caso nao haja elementos na lista de removidos, devolve erro sem quebrar o programa
     print()
 
-# função que salva a lista na condicao final em um arquivo json
+
 def save_function(task_list, file_path):
+    """Função que salva a lista na condicao final em um arquivo json"""
     list_name()
     data = task_list
     with open(file_path, 'w', encoding='utf8') as arquivo:
@@ -52,8 +56,9 @@ def save_function(task_list, file_path):
     print()
     return data
 
-# funçao para ler o arquivo json que contenha a lista
+
 def read_function(task_list, file_path):
+    """Funçao para ler o arquivo json que contenha a lista"""
     data = []
     try:
         with open(file_path, 'r', encoding='utf8') as arquivo:
