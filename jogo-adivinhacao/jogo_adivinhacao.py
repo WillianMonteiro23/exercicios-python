@@ -1,11 +1,11 @@
 import os  # Importando os para limpar o terminal
 
 def limpar_terminal():
-    # Limpa o terminal
+    """Limpa o terminal"""
     os.system('cls')
 
 def solicitar_letra():
-    # Solicita ao usuário uma letra e verifica a entrada
+    """Solicita ao usuário uma letra e verifica a entrada"""
     while True:
         letra = input('Digite uma letra: ')
         
@@ -22,7 +22,7 @@ def solicitar_letra():
         return letra.lower()  # Retorna a letra em minúscula
 
 def atualizar_palavra_formada(palavra_secreta, letras_acertadas):
-    # Atualiza a palavra formada com base nas letras acertadas
+    """Atualiza a palavra formada com base nas letras acertadas"""
     palavra_formada = ''
     for letra in palavra_secreta:
         if letra in letras_acertadas:
@@ -32,7 +32,7 @@ def atualizar_palavra_formada(palavra_secreta, letras_acertadas):
     return palavra_formada
 
 def jogar():
-    # Função principal do jogo
+    """Função principal do jogo"""
     palavra_secreta = 'python'
     letras_acertadas = ''
     contador = 0
