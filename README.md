@@ -66,6 +66,10 @@ O Cadastro de Pessoas Físicas (CPF) é um documento essencial para a identifica
 
 O objetivo deste exercício é criar uma função que receba um CPF como entrada, verifique se ele é válido e retorne um resultado indicando a validade do CPF.
 
+### Lógica do Algoritmo
+
+A lógica do algoritmo é baseada em um método de verificação que utiliza os 9 primeiros dígitos do CPF para calcular os dois dígitos verificadores. A ideia é que a sequência de operações matemáticas aplicadas aos dígitos de um CPF válido produza resultados que sempre respeitarão um padrão específico. Esses cálculos não são aleatórios, mas seguem uma regra lógica que permite validar o CPF.
+
 ### Requisitos
 
 1. **Entrada de Dados**:
