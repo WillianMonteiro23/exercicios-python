@@ -20,6 +20,9 @@ Cada exercício será acompanhado de uma explicação sobre o problema e um esbo
 - [Algoritmo de Validação do CPF](#algoritmo-de-validação-do-cpf)
 - [Gerenciador de Tarefas](#gerenciador-de-tarefas)
 - [Jogo de Adivinhação da Palavra Secreta](#jogo-de-adivinhação-da-palavra-secreta)
+- [Sistema de Perguntas e Respostas](#sistema-de-perguntas-e-respostas)
+- [Sistema de Gerenciamento de Biblioteca](#sistema-de-gerenciamento-de-biblioteca)
+- [Verificador de Numero Primo](#verificador-de-numero-primo)
 
 
 ### 🎯 Como isso pode auxiliar nos estudos?
@@ -98,7 +101,7 @@ A lógica do algoritmo é baseada em um método de verificação que utiliza os 
 - Utilize listas para armazenar os dígitos do CPF e realizar as operações necessárias.
 - Teste sua função com diferentes entradas, incluindo CPFs válidos e inválidos, para garantir que a lógica está correta.
 
-### ➡️ [Solução](https://github.com/WillianMonteiro23/exercicios-python/blob/main/algoritmo-validacao-cpf/validador_cpf.py) ⬅️ 
+### ➡️ [Solução](https://github.com/WillianMonteiro23/exercicios-python/blob/main/algoritmo-validacao-cpf/solucao.py) ⬅️ 
 
 
 ## Gerenciador de Tarefas
@@ -179,5 +182,84 @@ Suponha que a palavra secreta seja "python":
 - Considere usar um loop para continuar solicitando entradas até que a palavra completa seja adivinhada.
 - Lembre-se de tratar entradas inválidas (como mais de uma letra ou caracteres especiais).
 
-### ➡️ [Solução](https://github.com/WillianMonteiro23/exercicios-python/blob/main/jogo-adivinhacao/jogo_adivinhacao.py) ⬅️ 
+### ➡️ [Solução](https://github.com/WillianMonteiro23/exercicios-python/blob/main/jogo-adivinhacao/solucao.py) ⬅️ 
 
+
+# Sistema de Perguntas e Respostas
+
+## Descrição do Exercício
+
+Este projeto consiste na criação de um **sistema de perguntas e respostas** no estilo de um jogo. O objetivo do usuário é responder a uma série de perguntas, onde cada uma delas possui opções de resposta. As respostas corretas são armazenadas em um **gabarito**, e o sistema calcula quantas perguntas o usuário acertou ao final do jogo.
+
+### Funcionalidades Principais:
+1. **Armazenamento de Perguntas e Respostas**:
+   - O sistema deve armazenar um conjunto de perguntas e suas respectivas opções.
+   - As respostas corretas devem ser armazenadas em um gabarito.
+
+2. **Apresentação das Perguntas**:
+   - As perguntas são exibidas ao usuário uma por vez.
+   - Cada pergunta terá um conjunto de opções de respostas para o usuário escolher.
+
+3. **Verificação das Respostas**:
+   - Após o usuário selecionar uma resposta, o sistema verifica se a resposta está correta com base no gabarito.
+
+4. **Contador de Acertos**:
+   - O sistema deve manter um contador para registrar o número de respostas corretas do usuário.
+
+5. **Resultado Final**:
+   - Ao final do jogo, o sistema exibe o número total de perguntas respondidas corretamente pelo usuário.
+
+### ➡️ [Solução](https://github.com/WillianMonteiro23/exercicios-python/blob/main/sistema-perguntas-respotas/solucao.py) ⬅️ 
+
+## Sistema de Gerenciamento de Biblioteca
+
+### Descrição
+
+Você deve criar um sistema simples para gerenciar livros em uma biblioteca. O sistema deve ser capaz de adicionar livros, listar livros disponíveis e manter um contador de quantos livros foram adicionados.
+
+**O sistema deve permitir:**
+
+1. **Adicionar livros à biblioteca com informações como título, autor e disponibilidade para empréstimo.**
+2. **Manter um controle da quantidade total de livros que foram adicionados à biblioteca.**
+3. **Emprestar e devolver livros, alterando seu status de disponibilidade.**
+4. **Exibir a disponibilidade de cada livro com uma mensagem apropriada.**
+5. **Armazenar e listar todos os livros disponíveis na biblioteca, junto com suas informações e status de disponibilidade.**
+6. **Retornar o total de livros adicionados ao sistema de forma global.**
+  
+### ➡️ [Solução](https://github.com/WillianMonteiro23/exercicios-python/blob/main/sistema-gerenciador-biblioteca/solucao.py) ⬅️ 
+
+
+## Verificador de Numero Primo
+
+### Descrição
+
+Escreva uma função em Python chamada is_prime que verifique se um número inteiro positivo é primo. Um número primo é aquele que só pode ser dividido por 1 e por ele mesmo, sendo maior que 1.
+
+Em seguida, crie uma lista contendo números inteiros de 2 a 100. Para cada número da lista, utilize a função para verificar se ele é primo ou não, e imprima uma mensagem indicando o resultado, por exemplo: "7 é primo." ou "10 não é primo."
+
+### Dicas para Solucionar o Exercício
+
+1. **Entendimento do Conceito de Número Primo**:
+   - Um número primo é aquele que só pode ser dividido por 1 e por ele mesmo. Exemplos: 2, 3, 5, 7, 11, etc.
+   - Números menores ou iguais a 1 não são primos.
+
+2. **Função `is_prime(n)`**:
+   - **Caso base**: Verifique se o número é menor ou igual a 1. Números menores ou iguais a 1 não são primos, então a função deve retornar `False`.
+   
+3. **Laço de Verificação**:
+   - Para verificar se um número `n` é primo, você precisa testar se ele é divisível por algum número entre 2 e a raiz quadrada de `n`. Isso ocorre porque, se `n` for divisível por algum número maior que sua raiz quadrada, já teria sido detectado por um divisor menor.
+   - Use a função `range(2, int(n**0.5) + 1)` para iterar pelos possíveis divisores.
+
+4. **Condicional de Divisibilidade**:
+   - Dentro do laço, use a operação de módulo (`%`) para verificar se `n` é divisível por qualquer número no intervalo definido. Se o módulo for igual a zero, `n` não é primo.
+
+5. **Retorno da Função**:
+   - Se o número não for divisível por nenhum valor no intervalo, retorne `True`, indicando que o número é primo.
+
+6. **Testando com Vários Números**:
+   - Após escrever a função `is_prime`, crie uma lista de números de 2 a 100. Use um laço `for` para passar cada número da lista para a função `is_prime` e imprimir se ele é primo ou não.
+
+7. **Exemplo**:
+   - Para o número 29, a raiz quadrada é aproximadamente 5.39, então você precisa testar se 29 é divisível por 2, 3, 4 e 5. Como não é divisível por nenhum desses, a função deve retornar `True`, indicando que 29 é primo.
+
+### ➡️ [Solução](https://github.com/WillianMonteiro23/exercicios-python/blob/main/verificador-numero-primo/solucao.py) ⬅️ 
