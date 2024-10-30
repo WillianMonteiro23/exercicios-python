@@ -23,6 +23,7 @@ Cada exercício será acompanhado de uma explicação sobre o problema e um esbo
 - [Sistema de Perguntas e Respostas](#sistema-de-perguntas-e-respostas)
 - [Sistema de Gerenciamento de Biblioteca](#sistema-de-gerenciamento-de-biblioteca)
 - [Verificador de Numero Primo](#verificador-de-numero-primo)
+- [Sistema de Gestão de Veículos(POO)](#sistema-de-gestao-de-veiculos)
 
 
 ### 🎯 Como isso pode auxiliar nos estudos?
@@ -263,3 +264,32 @@ Em seguida, crie uma lista contendo números inteiros de 2 a 100. Para cada núm
    - Para o número 29, a raiz quadrada é aproximadamente 5.39, então você precisa testar se 29 é divisível por 2, 3, 4 e 5. Como não é divisível por nenhum desses, a função deve retornar `True`, indicando que 29 é primo.
 
 ### ➡️ [Solução](https://github.com/WillianMonteiro23/exercicios-python/blob/main/verificador-numero-primo/solucao.py) ⬅️ 
+
+
+## Sistema de Gestão de Veículos
+
+### Objetivo
+
+Crie um sistema de gestão de veículos que permita gerenciar diferentes tipos de veículos, como carros e caminhões, em uma loja de veículos. O sistema deve ser implementado utilizando Programação Orientada a Objetos (POO) em Python.
+
+### Requisitos
+
+O sistema deve incluir as seguintes funcionalidades:
+
+1. **Classe Veiculo**: 
+   - Representa um veículo genérico com os atributos de marca, modelo, preço e estoque. 
+   - Deve incluir métodos para vender veículos, adicionar estoque, obter e definir o preço, exibir informações e criar um veículo promocional com 20% de desconto.
+
+2. **Classe Carro**:
+   - Herda da classe `Veiculo` e deve incluir um atributo para o número de portas.
+   - O método de exibição de informações deve incluir também a quantidade de portas do carro.
+
+3. **Classe Caminhao**:
+   - Herda da classe `Veiculo` e deve incluir um atributo para a carga máxima (em toneladas).
+   - O método de exibição de informações deve incluir a carga máxima do caminhão.
+
+4. **Classe LojaDeVeiculos**:
+   - Representa uma loja que possui um estoque de veículos.
+   - Deve incluir métodos para adicionar veículos ao estoque, vender veículos (removendo-os do estoque quando não houver mais unidades) e listar todos os veículos disponíveis na loja.
+
+### ➡️ [Solução](https://github.com/WillianMonteiro23/exercicios-python/blob/main/gerenciador-loja-veiculos/solucao.py) ⬅️ 
