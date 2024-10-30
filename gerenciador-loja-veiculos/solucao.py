@@ -99,7 +99,7 @@ class LojaDeVeiculos:
 
 # Instanciação de objetos e teste das funcionalidades da classe
 ka = Carro('Ford', 'KA', 18000)
-truck = Carro('Volkswagen', 'ETR12038', 200000)
+truck = Caminhao('Volkswagen', 'ETR12038', 200000,1000)
 
 # Adiciona estoque aos veículos instanciados
 Veiculo.adicionar_estoque(ka, 1)
