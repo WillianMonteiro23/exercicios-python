@@ -23,7 +23,7 @@ Cada exercício será acompanhado de uma explicação sobre o problema e um esbo
 - [Sistema de Perguntas e Respostas](#sistema-de-perguntas-e-respostas)
 - [Sistema de Gerenciamento de Biblioteca](#sistema-de-gerenciamento-de-biblioteca)
 - [Verificador de Numero Primo](#verificador-de-numero-primo)
-- [Sistema de Gestão de Veículos(POO)](#sistema-de-gestao-de-veiculos)
+- [Sistema de Gestão de Veículos](#sistema-de-gestao-de-veiculos)
 
 
 ### 🎯 Como isso pode auxiliar nos estudos?
