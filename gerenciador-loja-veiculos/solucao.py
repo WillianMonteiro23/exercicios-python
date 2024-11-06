@@ -1,119 +1,119 @@
 # Classe base Veiculo, que representa veículos genéricos
-class Veiculo:
-    def __init__(self, marca, modelo, preco, estoque=0):
+class Vehicle:
+    def __init__(self, brand, model, price, stock=0):
         """Inicializa um veículo com marca, modelo, preço e estoque inicial opcional"""  
-        self.marca = marca
-        self.modelo = modelo
-        self._preco = preco
-        self._estoque = estoque
+        self.brand = brand
+        self.model = model
+        self._price = price
+        self._stock = stock
 
-    def vender(self):
+    def sell(self):
         """Método para vender um veículo; reduz o estoque em 1 se houver unidades disponíveis"""
-        if self._estoque > 0:
+        if self._stock > 0:
             print('Vendendo um veículo.')
-            self._estoque -= 1
+            self._stock -= 1
         else:
             print('Veículo indisponível no estoque.')
 
-    def adicionar_estoque(self, quantidade):
+    def add_stock(self, quantity):
         """Método para aumentar o estoque de veículos com a quantidade especificada"""
         print('Adicionando um veículo ao estoque.')
-        self._estoque += quantidade
+        self._stock += quantity
     
     @property
-    def preco(self):
+    def price(self):
         """Getter para o preço do veículo, permite que ele seja acessado de forma segura"""
-        return self._preco
+        return self._price
 
-    @preco.setter
-    def preco(self, novo_preco):
+    @price.setter
+    def price(self, new_price):
         """Setter para o preço do veículo, que valida se o novo preço é positivo antes de definir"""
-        if novo_preco > 0:
-            self._preco = novo_preco
+        if new_price > 0:
+            self._price = new_price
         else:
             print('Não é permitido um preço abaixo de zero.')
 
-    def exibir_informacoes(self):
+    def display_info(self):
         """Exibe as informações básicas do veículo: marca, modelo e preço"""
-        print(f'As informações básicas do veículo são: MARCA: {self.marca}, MODELO: {self.modelo} e PRECO: {self.preco}')
+        print(f'As informações básicas do veículo são: MARCA: {self.brand}, MODELO: {self.model} e PRECO: {self.price}')
 
     @classmethod
-    def veiculo_promocional(cls, marca, modelo, preco):
-        """Método de classe que cria uma instância de Veiculo com um desconto de 20% no preço original"""
-        preco_com_desconto = preco * 0.8
-        return cls(marca, modelo, preco_com_desconto)
+    def promotional_vehicle(cls, brand, model, price):
+        """Método de classe que cria uma instância de Vehicle com um desconto de 20% no preço original"""
+        discounted_price = price * 0.8
+        return cls(brand, model, discounted_price)
 
-# Classe Carro que herda da classe Veiculo, representando um tipo específico de veículo
-class Carro(Veiculo):
-    def __init__(self, marca, modelo, preco, estoque=0, numero_portas=4):
-        """Inicializa um carro com a quantidade de portas e demais atributos da classe Veiculo"""
-        super().__init__(marca, modelo, preco, estoque)
-        self.numero_portas = numero_portas
+# Classe Carro que herda da classe Vehicle, representando um tipo específico de veículo
+class Car(Vehicle):
+    def __init__(self, brand, model, price, stock=0, number_of_doors=4):
+        """Inicializa um carro com a quantidade de portas e demais atributos da classe Vehicle"""
+        super().__init__(brand, model, price, stock)
+        self.number_of_doors = number_of_doors
     
-    def exibir_informacoes(self):
+    def display_info(self):
         """Exibe as informações do carro incluindo a quantidade de portas"""
-        print(f'As informações básicas do veículo são: MARCA: {self.marca}, MODELO: {self.modelo}, PRECO: {self.preco} e NUMERO DE PORTAS: {self.numero_portas}')
+        print(f'As informações básicas do veículo são: MARCA: {self.brand}, MODELO: {self.model}, PRECO: {self.price} e NUMERO DE PORTAS: {self.number_of_doors}')
 
-# Classe Caminhao que herda de Veiculo e representa um caminhão com uma capacidade de carga máxima
-class Caminhao(Veiculo):
-    def __init__(self, marca, modelo, preco, carga_maxima, estoque=0):
-        """Inicializa o caminhão com a carga máxima e demais atributos da classe Veiculo"""
-        super().__init__(marca, modelo, preco, estoque)
-        self.carga_maxima = carga_maxima
+# Classe Caminhao que herda de Vehicle e representa um caminhão com uma capacidade de carga máxima
+class Truck(Vehicle):
+    def __init__(self, brand, model, price, max_load, stock=0):
+        """Inicializa o caminhão com a carga máxima e demais atributos da classe Vehicle"""
+        super().__init__(brand, model, price, stock)
+        self.max_load = max_load
 
-    def exibir_informacoes(self):
+    def display_info(self):
         """Exibe as informações do caminhão, incluindo a carga máxima suportada"""
-        print(f'As informações básicas do veículo são: MARCA: {self.marca}, MODELO: {self.modelo}, PRECO: {self.preco} e CARGA MÁXIMA: {self.carga_maxima}')
+        print(f'As informações básicas do veículo são: MARCA: {self.brand}, MODELO: {self.model}, PRECO: {self.price} e CARGA MÁXIMA: {self.max_load}')
 
-# Classe LojaDeVeiculos, que representa uma loja de veículos e mantém um estoque de Veiculo
-class LojaDeVeiculos:
-    def __init__(self, nome):
+# Classe LojaDeVeiculos, que representa uma loja de veículos e mantém um estoque de Vehicle
+class VehicleStore:
+    def __init__(self, name):
         """Inicializa uma loja com um nome e uma lista de veículos vazia"""
-        self.nome = nome
-        self.veiculos = []
+        self.name = name
+        self.vehicles = []
 
-    def adicionar_veiculo(self, veiculo):
+    def add_vehicle(self, vehicle):
         """Adiciona um veículo ao estoque da loja"""
-        print(f'Adicionando um Veículo ao estoque da loja {self.nome}')
-        self.veiculos.append(veiculo)
+        print(f'Adicionando um Veículo ao estoque da loja {self.name}')
+        self.vehicles.append(vehicle)
 
-    def vender_veiculo(self, veiculo):
+    def sell_vehicle(self, vehicle):
         """Vende um veículo do estoque, removendo-o da lista se o estoque atingir zero"""
-        if veiculo in self.veiculos:
-            veiculo.vender()
+        if vehicle in self.vehicles:
+            vehicle.sell()
             # Remove o veículo da lista se não houver mais unidades em estoque
-            if veiculo._estoque == 0:
-                self.veiculos.remove(veiculo)
+            if vehicle._stock == 0:
+                self.vehicles.remove(vehicle)
         else:
-            print('Veiculo não encontrado no estoque.')
+            print('Veículo não encontrado no estoque.')
     
-    def listar_estoque(self):
+    def list_stock(self):
         """Lista todos os veículos em estoque na loja"""
-        print(f'Estoque da loja {self.nome}')
+        print(f'Estoque da loja {self.name}')
         print()
-        if self.veiculos:
-            for veiculo in self.veiculos:
-                print(f'{veiculo.__class__.__name__}: {veiculo.marca} {veiculo.modelo} {veiculo.preco}')
+        if self.vehicles:
+            for vehicle in self.vehicles:
+                print(f'{vehicle.__class__.__name__}: {vehicle.brand} {vehicle.model} {vehicle.price}')
         else:
             print('Você não tem veículos para listar.')
 
 # Instanciação de objetos e teste das funcionalidades da classe
-ka = Carro('Ford', 'KA', 18000)
-truck = Caminhao('Volkswagen', 'ETR12038', 200000,1000)
+ka = Car('Ford', 'KA', 18000)
+truck = Truck('Volkswagen', 'ETR12038', 200000, 1000)
 
 # Adiciona estoque aos veículos instanciados
-Veiculo.adicionar_estoque(ka, 1)
-Veiculo.adicionar_estoque(truck, 1)
+Vehicle.add_stock(ka, 1)
+Vehicle.add_stock(truck, 1)
 
 # Cria uma loja de veículos e adiciona o carro Ford KA ao estoque da loja
-loja = LojaDeVeiculos('T-CAR')
-loja.adicionar_veiculo(ka)
+store = VehicleStore('T-CAR')
+store.add_vehicle(ka)
 
 # Exibe o estoque da loja, tenta vender o veículo duas vezes e exibe o estoque novamente
-loja.listar_estoque()
-loja.vender_veiculo(ka)
-loja.vender_veiculo(ka)
-loja.listar_estoque()
+store.list_stock()
+store.sell_vehicle(ka)
+store.sell_vehicle(ka)
+store.list_stock()
 
 # Tenta vender o segundo veículo
-loja.vender_veiculo(truck)
+store.sell_vehicle(truck)
