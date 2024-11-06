@@ -293,3 +293,20 @@ O sistema deve incluir as seguintes funcionalidades:
    - Deve incluir métodos para adicionar veículos ao estoque, vender veículos (removendo-os do estoque quando não houver mais unidades) e listar todos os veículos disponíveis na loja.
 
 ### ➡️ [Solução](https://github.com/WillianMonteiro23/exercicios-python/blob/main/gerenciador-loja-veiculos/solucao.py) ⬅️ 
+
+
+## Sistema gerenciador de acesso
+
+### Cenário
+
+Imagine que você está desenvolvendo um sistema que permite que apenas usuários autenticados com uma função específica (ex.: "admin") executem determinadas operações críticas.
+
+### Objetivo
+
+Seu objetivo é criar uma classe `Usuario` que permita:
+1. Autenticar um usuário, habilitando-o a acessar operações restritas.
+2. Utilizar decoradores de método para:
+   - Verificar se o usuário está autenticado antes de permitir o acesso a métodos protegidos.
+   - Autorizar o usuário a executar operações críticas apenas se ele possuir a função `"admin"`.
+
+### ➡️ [Solução](https://github.com/WillianMonteiro23/exercicios-python/blob/main/gerenciador-acesso/solucao.py) ⬅️ 
