@@ -24,6 +24,7 @@ Cada exercício será acompanhado de uma explicação sobre o problema e um esbo
 - [Sistema de Gerenciamento de Biblioteca](#sistema-de-gerenciamento-de-biblioteca)
 - [Verificador de Numero Primo](#verificador-de-numero-primo)
 - [Sistema de Gestão de Veículos](#sistema-de-gestao-de-veiculos)
+- [Sistema Gerenciador de Acesso](#sistema-gerenciador-de-acesso)
 
 
 ### 🎯 Como isso pode auxiliar nos estudos?
@@ -295,7 +296,7 @@ O sistema deve incluir as seguintes funcionalidades:
 ### ➡️ [Solução](https://github.com/WillianMonteiro23/exercicios-python/blob/main/gerenciador-loja-veiculos/solucao.py) ⬅️ 
 
 
-## Sistema gerenciador de acesso
+## Sistema Gerenciador de Acesso
 
 ### Cenário
 
