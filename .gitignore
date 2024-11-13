@@ -1,0 +1,5 @@
+# Ignorar ambiente virtual Python
+Lib/
+Scripts/
+Include/
+pyvenv.cfg
