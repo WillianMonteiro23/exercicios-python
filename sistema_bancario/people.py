@@ -12,20 +12,20 @@ class People:
     def name(self) -> str:
         """Getter para o atributo name"""
         return self._name
-    
+
     @property
     def age(self) -> int:
         """Getter para o atributo age."""
         return self._age
-    
+
 
 class Customer(People):
     def __init__(self, name: str, age: int, account: Account):
         """
-        Inicializa a classe Customer, que herda de People e associa uma conta 
+        Inicializa a classe Customer, que herda de People e associa uma conta
         bancária ao cliente.
         """
-        super().__init__(name, age)  # Inicializa herdando da classe People 
+        super().__init__(name, age)  # Inicializa herdando da classe People
         self.account = account  # Associa uma conta bancária ao cliente
 
 
