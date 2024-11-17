@@ -25,6 +25,7 @@ Cada exercício será acompanhado de uma explicação sobre o problema e um esbo
 - [Verificador de Numero Primo](#verificador-de-numero-primo)
 - [Sistema de Gestão de Veículos](#sistema-de-gestao-de-veiculos)
 - [Sistema Gerenciador de Acesso](#sistema-gerenciador-de-acesso)
+- [Sistema Bancário em POO](#sistema-bancario-em-poo)
 
 
 ### 🎯 Como isso pode auxiliar nos estudos?
@@ -311,3 +312,17 @@ Seu objetivo é criar uma classe `Usuario` que permita:
    - Autorizar o usuário a executar operações críticas apenas se ele possuir a função `"admin"`.
 
 ### ➡️ [Solução](https://github.com/WillianMonteiro23/exercicios-python/blob/main/gerenciador-acesso/solucao.py) ⬅️ 
+
+## Sistema Bancário em POO
+
+### Objetivo
+Desenvolver um sistema bancário simples utilizando os conceitos de **Programação Orientada a Objetos (POO)**. O sistema deve gerenciar clientes, contas bancárias (corrente e poupança) e permitir operações básicas, como saque e depósito.
+
+## Exemplo de Uso
+1. Crie um banco.
+2. Adicione clientes e contas ao banco.
+3. Autentique o cliente e a conta antes de permitir operações.
+4. Realize saques e depósitos autenticados.
+5. Exiba informações dos clientes e contas do banco.
+
+### ➡️ [Solução](https://github.com/WillianMonteiro23/exercicios-python/blob/main/sistema-bancario/solucao.py) ⬅️
